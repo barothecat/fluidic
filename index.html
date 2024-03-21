@@ -218,16 +218,15 @@
         margin-right: 0.25em;
       }
 
-      a {
-        font-size: inherit;
-        text-decoration: none;
+      a.contact-us-text {
+        text-decoration: none; /* Remove underline */
       }
 
       /* Contact us button */
-      .text a {
+      a.enter {
         font-size: inherit;
         text-decoration: underline white;
-        text-decoration-thickness: 2px;
+        text-decoration-thickness: 0.04em;
       }
 
       .contact-us {
@@ -525,6 +524,11 @@
           top: 43.5em;
         }
 
+        .new-notice:hover {
+          color: #fd0099;
+          background-color: transparent;
+        }
+
         .subtext {
           max-width: 29em;
           font-size: 0.7em;
@@ -665,6 +669,11 @@
           border: none;
           text-decoration: underline;
           top: 35em;
+        }
+
+        .new-notice:hover {
+          color: #fd0099;
+          background-color: transparent;
         }
 
         .subtext {
@@ -1041,6 +1050,7 @@
             <span class="text text-wrapper">Fluidic Analytics Ltd <br /></span>
             <a
               href="https://www.fluidic.com/wp-content/uploads/2023/11/Notice-of-Administration-Notice-Board.pdf"
+              class="enter"
               ><span class="text span">entered administration</span></a
             >
             <span class="text text-wrapper">
