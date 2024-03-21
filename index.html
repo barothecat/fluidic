@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fludic Sciences</title>
+    <link
+      rel="icon"
+      href="https://i.ibb.co/CMYfc10/Logo-for-signature-Square-with-neon-blue-background-version.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aptos:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Honk&family=Inter:wght@100..900&family=Madimi+One&display=swap");
+
+      @font-face {
+        font-family: "Aptos";
+        src: url("./Aptos.tff") format("tff");
+      }
+
+      /* General reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.9vh;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: "Comfortaa", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+      }
+
+      /* Header styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #fff;
+      }
+
+      /* nav */
+      .nav {
+        max-width: 50em;
+        width: 100%;
+        margin: 1.5em 5em 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+
+      .logo {
+        width: 10em;
+      }
+
+      img {
+        width: 8.5em;
+        height: auto;
+      }
+
+      .new-notice {
+        /* New ownership notice */
+        width: 15em;
+        height: 2.2em;
+        font-size: 0.5em;
+        background-color: transparent;
+        border: solid 0.06em #3800a6;
+        color: #3800a6;
+        border-radius: 1em;
+
+        /* identical to box height */
+        text-align: center;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        cursor: pointer;
+      }
+
+      .new-notice:hover {
+        color: #fff;
+        background-color: #3800a6;
+      }
+
+      /* end nav */
+
+      /* main */
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 40em;
+        margin: auto;
+        margin-top: 1em;
+      }
+
+      .hero {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 40em;
+        width: 100%;
+      }
+
+      h1 {
+        /* Launching Soon! */
+        margin-bottom: 0.3em;
+
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5em;
+        text-align: center;
+        color: #3800a6;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .subtext {
+        /* Slogan */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4em 1.5em;
+        gap: 0.65em;
+        color: #fff;
+        background: #fd0099;
+        border-radius: 2em;
+        max-width: 37em;
+        font-size: 0.8em;
+      }
+
+      p {
+        /* Revolutionize your protein  */
+
+        max-width: 40em;
+        width: 100%;
+
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.2em;
+        text-align: center;
+        letter-spacing: -0.04em;
+
+        color: #3800a6;
+        margin-top: 1.3em;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+
+      .stay-tuned {
+        /* Elevate your protein   */
+
+        text-align: center;
+        letter-spacing: -0.05em;
+        justify-content: center;
+        color: #3800a6;
+        margin-top: 0.8em;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      .stay-tuned span {
+        /* Elevate your protein   */
+        font-family: "Inter", sans-serif;
+
+        text-align: center;
+        letter-spacing: -0.05em;
+        color: #3800a6;
+        margin-right: 0.25em;
+      }
+
+      a {
+        font-size: inherit;
+        text-decoration: none;
+      }
+
+      /* Contact us button */
+      .text a {
+        font-size: inherit;
+        text-decoration: underline white;
+        text-decoration-thickness: 2px;
+      }
+
+      .contact-us {
+        width: 7.5em;
+        margin-top: 1.1em;
+
+        /* Rectangle 6 */
+        border: none;
+        box-sizing: border-box;
+
+        color: #fff;
+        background: #3800a6;
+        border-radius: 0.9em;
+        padding: 0.2em 0.6em 0.2em 0.2em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        /* transition: transform 15s ease; */
+        transition: background-color 2s ease;
+
+        cursor: pointer;
+      }
+
+      .contact-text {
+        /* Contact us text */
+        transition: transform 1s ease;
+        font-size: 0.8em;
+        color: #fff;
+      }
+      .contact-icon {
+        /* Ellipse 6 */
+        transition: transform 1s ease, background-color 0.5s ease;
+
+        width: 1.3em;
+        height: 1.3em;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #fd0099;
+
+        z-index: 2;
+      }
+
+      .contact-icon svg {
+        transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+        width: 0.75em;
+        height: 0.75em;
+        stroke-width: 0.06em;
+      }
+
+      .contact-us:hover {
+        background: #fd0099;
+      }
+
+      .contact-us:hover .contact-icon {
+        transform: translateX(420%); /* Slide the SVG to the right */
+      }
+
+      .contact-us:hover .contact-text {
+        transform: translateX(-30%); /* Slide text to the left */
+      }
+
+      .contact-us:hover .contact-icon {
+        background: #3800a6;
+      }
+
+      /* end main */
+
+      /* dot */
+      .dot-area {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        align-items: center;
+        overflow-x: hidden;
+        justify-content: center;
+        margin-top: 2.3vh;
+      }
+
+      /* row 1 */
+      .first-row {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        align-items: center;
+        overflow-x: hidden;
+        justify-content: center; /* Center the dots in the row */
+        margin-top: 1.5em;
+      }
+
+      /* Adjustments for the pink-dot elements */
+      .pink-dot {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background: #fd0099;
+        flex: none;
+        order: 5;
+        flex-grow: 0;
+        margin: 0 1.55em;
+      }
+      /* end row 1 */
+
+      /* row 2 */
+      .second-row {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        align-items: center;
+        overflow-x: hidden;
+        justify-content: center;
+        margin-top: 2.4em;
+      }
+
+      .double-dot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2.3em;
+      }
+
+      .dot {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        margin-right: -1em;
+      }
+
+      .dot-left {
+        background-color: #fd0099;
+      }
+
+      .dot-right {
+        background-color: #3800a6;
+        margin-right: 0; /* reset margin for the second dot */
+      }
+
+      /* end row 2 */
+
+      /* row 3 */
+      .third-row {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        align-items: center;
+        overflow-x: hidden;
+        justify-content: center; /* Center the dots in the row */
+        margin-top: 2.4em;
+      }
+
+      .blue-dot {
+        background-color: #3800a6;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        flex: none;
+        order: 5;
+        flex-grow: 0;
+        margin: 0 1.55em;
+      }
+      /* end row 3 */
+
+      .fourth-row {
+        flex-flow: row nowrap;
+        width: 100%;
+        align-items: center;
+        overflow-x: hidden;
+        justify-content: center; /* Center the dots in the row */
+        margin-top: 2.4em;
+        display: none;
+      }
+      .fifth-row {
+        display: none;
+        flex-flow: row nowrap;
+        width: 100%;
+        align-items: center;
+        overflow-x: hidden;
+        justify-content: center; /* Center the dots in the row */
+        margin-top: 1.5em;
+      }
+
+      /* end dot */
+
+      /* pop up */
+      .notice-popup {
+        /* display: flex; */
+        display: none;
+        width: 19.5em;
+        height: 19.5em;
+        align-items: flex-start;
+        gap: 0.3em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+      }
+
+      .notice-popup .group {
+        position: relative;
+        width: 19.5em;
+        height: 19.5em;
+      }
+
+      .notice-popup .overlap-group {
+        position: relative;
+        width: 19.5em;
+        height: 19.5em;
+        background-color: #3800a6;
+        border-radius: 50%;
+      }
+
+      .notice-popup .fluidic-analytics {
+        position: absolute;
+        width: 15.6em;
+        top: 2.5em;
+        left: 18.5%;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 0.8em;
+        text-align: center;
+        letter-spacing: -0.05em;
+        line-height: normal;
+      }
+
+      .text {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 0.8em;
+      }
+
+      .notice-popup .text-wrapper {
+        letter-spacing: -0.05em;
+      }
+
+      .notice-popup .span {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .notice-popup .text-wrapper-2 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .notice-popup .close-button {
+        position: absolute;
+        width: 2.18em;
+        height: 2.18em;
+        top: 0.6em;
+        left: 13.8em;
+        background-color: #fd0099;
+        border-radius: 50%;
+      }
+
+      .close-button svg {
+        position: absolute;
+        width: 1.35em;
+        height: 1.35em;
+        top: 18%;
+        left: 18%;
+      }
+
+      .blur-background {
+        filter: blur(7px);
+        background-color: rgba(245, 245, 245, 0.6);
+      }
+
+      /* end pop up */
+
+      /* tablet */
+      @media only screen and (min-width: 760px) and (max-width: 1030px) {
+        /* Slightly larger adjustments for tablets */
+        h1 {
+          font-size: 1.7em;
+          margin-top: 0.7em;
+        }
+
+        .logo {
+          width: 8.9em;
+        }
+
+        .new-notice {
+          position: absolute;
+          border: none;
+          text-decoration: underline;
+          top: 43.5em;
+        }
+
+        .subtext {
+          max-width: 29em;
+          font-size: 0.7em;
+          padding: 0.7em 2em;
+          text-align: center;
+        }
+
+        .stay-tuned {
+          flex-flow: column wrap;
+        }
+
+        p,
+        span {
+          max-width: 27em;
+          font-size: 0.7em;
+        }
+
+        .contact-us {
+          max-width: 5.5em;
+        }
+
+        .contact-icon {
+          width: 0.9em;
+          height: 0.9em;
+        }
+
+        .contact-text {
+          font-size: 0.53em;
+        }
+
+        .contact-icon svg {
+          width: 0.5em;
+          height: 0.5em;
+          stroke-width: 0.05em;
+        }
+
+        .container,
+        .nav,
+        main,
+        .hero {
+          align-items: center;
+          justify-content: space-around;
+        }
+
+        .dot-area {
+          margin-top: 2.3em;
+        }
+
+        .first-row,
+        .second-row,
+        .third-row,
+        .fourth-row {
+          margin-top: 1.3em;
+        }
+
+        .fourth-row {
+          display: flex;
+        }
+
+        .dot {
+          width: 1.4em;
+          height: 1.4em;
+          margin-right: -0.7em;
+        }
+
+        .double-dot {
+          margin: 0 1.4em;
+        }
+
+        .pink-dot {
+          width: 1.4em;
+          height: 1.4em;
+          margin: 0 1em;
+        }
+
+        .blue-dot {
+          width: 1.4em;
+          height: 1.4em;
+          margin: 0 1em;
+        }
+
+        .notice-popup {
+          width: 16.5em;
+          height: 16.5em;
+        }
+        .notice-popup .overlap-group {
+          width: 16.5em;
+          height: 16.5em;
+        }
+
+        .text {
+          font-size: 0.62em;
+        }
+
+        .notice-popup .fluidic-analytics {
+          width: 13em;
+          top: 1.3em;
+          left: 18%;
+          letter-spacing: 0em;
+        }
+
+        .notice-popup .close-button {
+          position: absolute;
+          width: 2em;
+          height: 2em;
+          top: 1.2em;
+          left: 13em;
+          background-color: #fd0099;
+          border-radius: 50%;
+        }
+      }
+      /* end tablet */
+
+      /* mobile */
+      @media only screen and (max-width: 760px) {
+        /* Adjust font sizes */
+        h1 {
+          font-size: 1.2em;
+          margin-top: 0.7em;
+          margin-bottom: 0.5em;
+        }
+
+        .logo {
+          width: 4.7em;
+          margin-top: 0.5em;
+        }
+
+        img {
+          width: 4.7em;
+        }
+
+        main {
+          margin-top: 0.5em;
+        }
+
+        .new-notice {
+          position: absolute;
+          border: none;
+          text-decoration: underline;
+          top: 35em;
+        }
+
+        .subtext {
+          max-width: 24em;
+          width: 100%;
+          font-size: 0.5em;
+          padding: 0.7em 2em;
+          text-align: center;
+          margin-top: 0.5em;
+        }
+
+        article {
+          margin-top: 0.2em;
+        }
+
+        .stay-tuned {
+          flex-flow: column wrap;
+          margin-top: 0.5em;
+        }
+
+        p,
+        span {
+          max-width: 24em;
+          font-size: 0.5em;
+        }
+
+        .contact-us {
+          max-width: 5.5em;
+        }
+
+        .contact-icon {
+          width: 0.9em;
+          height: 0.9em;
+        }
+
+        .contact-text {
+          font-size: 0.53em;
+        }
+
+        .contact-icon svg {
+          width: 0.5em;
+          height: 0.5em;
+          stroke-width: 0.05em;
+        }
+
+        .container,
+        .nav,
+        main,
+        .hero {
+          align-items: center;
+          justify-content: space-around;
+        }
+
+        .dot-area {
+          margin-top: 3.3em;
+        }
+
+        .first-row,
+        .second-row,
+        .third-row,
+        .fourth-row {
+          margin-top: 1.3em;
+        }
+
+        .fourth-row,
+        .fifth-row {
+          display: flex;
+        }
+
+        .dot {
+          width: 1.4em;
+          height: 1.4em;
+          margin-right: -0.7em;
+        }
+
+        .double-dot {
+          margin: 0 1.4em;
+        }
+
+        .pink-dot {
+          width: 1.4em;
+          height: 1.4em;
+          margin: 0 1em;
+        }
+
+        .blue-dot {
+          width: 1.4em;
+          height: 1.4em;
+          margin: 0 1em;
+        }
+
+        .notice-popup {
+          width: 13em;
+          height: 13em;
+        }
+        .notice-popup .overlap-group {
+          width: 13em;
+          height: 13em;
+        }
+
+        .text {
+          font-size: 0.5em;
+        }
+
+        .notice-popup .fluidic-analytics {
+          width: 10.2em;
+          top: 0.6em;
+          left: 18%;
+          letter-spacing: 0em;
+          line-height: 0.8em;
+        }
+
+        .notice-popup .close-button {
+          position: absolute;
+          width: 1.5em;
+          height: 1.5em;
+          top: 1em;
+          left: 10.3em;
+          background-color: #fd0099;
+          border-radius: 50%;
+        }
+
+        .close-button svg {
+          width: 1em;
+          height: 1em;
+        }
+      }
+
+      /* end mobile */
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="nav">
+        <div class="logo">
+          <img src="https://i.ibb.co/hXjyRPw/Asset-8-1.png" />
+        </div>
+        <button class="new-notice" id="openPopup">New ownership notice</button>
+      </div>
+
+      <main>
+        <section class="hero">
+          <h1>Launching Soon!</h1>
+          <div class="subtext">
+            It's time to look at protein interactions under native conditions.
+          </div>
+          <article>
+            <p>
+              Revolutionize your protein interaction measurements with
+              Microfluidic Diffusional Sizing (MDS) technology, an
+              immobilization-free technique, bringing multi-attribute results:
+              affinity, size, and concentration of the most challenging proteins
+              in their native environment.
+            </p>
+            <div class="stay-tuned">
+              <span>Elevate your protein analysis with MDS today! </span>
+              <span> Stay tuned for updates!</span>
+            </div>
+          </article>
+          <a href="mailto:info@fluidic.com" class="contact-us-text">
+            <button class="contact-us">
+              <div class="contact-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mail"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <span class="contact-text">Contact us</span>
+            </button>
+          </a>
+        </section>
+      </main>
+
+      <div class="dot-area">
+        <div class="first-row">
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+        </div>
+        <div class="second-row">
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+        </div>
+        <div class="third-row">
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+          <div class="pink-dot single-dot"></div>
+          <div class="blue-dot single-dot"></div>
+        </div>
+        <div class="fourth-row">
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+          <div class="double-dot">
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+          </div>
+        </div>
+        <div class="fifth-row">
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+          <div class="pink-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="notice-popup" id="popup">
+      <div class="group">
+        <div class="overlap-group">
+          <p class="fluidic-analytics">
+            <span class="text text-wrapper">Fluidic Analytics Ltd <br /></span>
+            <a
+              href="https://www.fluidic.com/wp-content/uploads/2023/11/Notice-of-Administration-Notice-Board.pdf"
+              ><span class="text span">entered administration</span></a
+            >
+            <span class="text text-wrapper">
+              on 1 November 2023, and ceased trading later in the month.</span
+            >
+            <span class="text text-wrapper-2">
+              <br /><br />Fluidic Sciences</span
+            >
+            <span class="text text-wrapper"
+              >, a new team of dynamic and forward-thinking microfluidic
+              experts. has acquired the Fluidity One-M instrument and associated
+              assets from the administrators. The team is pleased to announce it
+              is assessing ways to continue delivering One-M consumables to
+              existing customers, as well as providing Fluidity One-M
+              instruments to new customers.</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="close-button" id="closePopup">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="0.1em"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-x"
+        >
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("openPopup")
+        .addEventListener("click", function () {
+          document.getElementById("popup").style.display = "flex";
+          document.getElementById("container").classList.add("blur-background");
+        });
+
+      document
+        .getElementById("closePopup")
+        .addEventListener("click", function () {
+          document.getElementById("popup").style.display = "none";
+          document
+            .getElementById("container")
+            .classList.remove("blur-background");
+        });
+    </script>
+  </body>
+</html>
